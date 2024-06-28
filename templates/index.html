@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NEXUS</title>
+    <link rel="icon" type="image/x-icon" href="static/images/NEXUS_CONNECT.jpg">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .nav-bar {
+            overflow: hidden;
+            background-color: #002366;
+            display: flex;
+            justify-content: space-between; /* Added */
+            align-items: center; /* Added */
+        }
+        .nav-bar a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: background-color 0.3s;
+        }
+        .nav-bar a:hover {
+            background-color: #E89C31;
+            color: white;
+        }
+        .nav-bar a.active {
+            background-color: #E89C31;
+            color: white;
+        }
+        .nav-bar .right-links {
+            display: flex;
+            align-items: center;
+        }
+        .nav-bar .right-links a {
+            color: #f2f2f2;
+            text-decoration: none;
+            padding: 14px 16px;
+            font-size: 17px;
+            transition: background-color 0.3s;
+        }
+        .nav-bar .right-links a:hover {
+            background-color: #E89C31;
+            color: white;
+        }
+        .nav-bar .right-links a.active {
+            background-color: #E89C31;
+            color: white;
+        }
+        .nav-bar .right-links .or {
+            color: #f2f2f2;
+            margin: 0 10px;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 50px);
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .slogan {
+            font-weight: 700;
+            text-align: center;
+            font-family: sans-serif;
+            color: #002366;
+        }
+        .search-bar {
+            width: 700px;
+            height: 50px;
+            border-radius: 50px;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+            display: block;
+            padding: 5px 15px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .icons img {
+            width: 50px;
+            border-radius: 50px;
+            margin: 0 10px;
+            transition: all 0.3s linear;
+        }
+        .icons a:hover img {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="left-links">
+            <a class="active" href="#home">Kaligan</a>
+            <a href="about.html">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="right-links">
+            <a href="log_in.html">Sign in</a>
+            <span class="or">or</span>
+            <a href="register.html">Sign up</a>
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <img src="static/images/NEXUS.jpg" alt="NEXUS Logo">
+            <h1 class="slogan">Konektado sa pamapagitan ng pandaigdigang-sapot</h1>
+            <input type="text" class="search-bar" placeholder="Search...">
+            <div class="icons">
+                <a href="katha.html"><img src="static/images/NEXUS_KATHA.jpg" alt="Katha Icon"></a>
+                <a href="balita.html"><img src="static/images/NEXUS_BALITA.jpg" alt="Balita Icon"></a>
+                <a href="laro.html"><img src="static/images/NEXUS_LARO.jpg" alt="Laro Icon"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
