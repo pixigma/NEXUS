@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NEXUS</title>
+    <link rel="icon" type="image/x-icon" href="static/images/NEXUS_CONNECT.jpg">
+    <style>
+        body {
+            font-family: sans-serif;
+            color: #002366;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .wp_opening {
+            text-align: center;
+            color: #002366;
+            font-family: sans-serif;
+            font-size: xx-large;
+            margin-top: 20px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-top: 20px;
+        }
+        .form-container {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .wp_header {
+            text-align: center;
+            font-family: sans-serif;
+            color: #002366;
+            margin-bottom: 20px;
+        }
+        form {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #002366;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .form-text {
+            color: black;
+            text-align: center;
+        }
+        .image-container {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wp_opening">
+        <h1>WELCOME TO NEXUS</h1>
+    </div>
+
+    <div class="content">
+        <div class="image-container">
+            <img src="static/images/NEXUS_KONEKTADO.png" alt="Nexus Image">
+        </div>
+
+        <div class="form-container">
+            <div class="wp_header">
+                <h2>REGISTER</h2>
+            </div>
+
+            <form action="/action_page.php">
+                <div class="container">
+                    <h3>Please fill in this form to create an account</h3>
+
+                    <div class="form-group">
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <p class="form-text">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                    </div>
+
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
