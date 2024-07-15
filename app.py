@@ -5,3 +5,6 @@ app = Flask(__name__)
 def kaligan():
     return render_template('index.html')
 
+@app.route('/katha')
+def katha():
+    return render_template('katha.html')
